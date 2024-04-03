@@ -1,0 +1,45 @@
+<!-- Register -->
+<div class="container" style="width: 500px; height: auto;">
+    <div class="card card-default">
+        <div class="card-header">
+            <h2 class="card-title">ĐĂNG KÍ TÀI KHOẢN</h2>
+        </div>
+        <form class="card-body" name="frmBonus">
+            <div class="form-group">
+                <label>Họ tên</label>
+                <input class="form-control" ng-model="fullname" name="txtFullname" maxlength="25" required>
+                <span class="text-primary" ng-show="frmBonus.txtFullname.$valid">
+                    Họ và tên hợp lệ
+                </span>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" ng-model="email" type="email" name="txtEmail" required>
+                <span class="text-primary" ng-show="frmBonus.txtEmail.$valid">
+                    Đúng định dạng Email
+                </span>
+            </div>
+            <div class="form-group">
+                <label>Điện thoại</label>
+                <input type="text" class="form-control" ng-model="text" name="txtTelephone" minlength="9"
+                    maxlength="10" required>
+
+                <span class="text-primary" ng-show="frmBonus.txtTelephone.$valid">
+                    Số điện thoại: {{frmBonus.txtTelephone.$valid}}
+                </span>
+
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu</label>
+                <input type="password" class="form-control" ng-model="password" name="txtPassword" minlength="6" required>
+                <span class="text-primary" ng-show="frmBonus.txtPassword.$valid">
+                    Mật khẩu hợp lệ
+                </span>
+            </div>
+        </form>
+        <div class="card-footer">
+            <button class="btn btn-danger" ng-click="register()">Đăng kí</button>
+            <h4 ng-show="frmBonus.$valid">{{thongbao}}</h4><br>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<!-- Artical -->
+<article style="margin-top: 20px;">
+    <div class="container">
+        <div class="row">
+            <!-- Danh mục-->
+            <div class="col-lg-3">
+                <strong>Danh mục</strong>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <strong>Sản phẩm</strong>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"  ng-repeat="a in loai">
+                                <ul style="list-style-type: none;">
+                                    <li><a href="#!dosanpham/{{a.id}}" style="text-decoration: none; color: black;">{{a.name}}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- San pham-->
+            <div class="col-lg-9">
+                <div>
+                    <div class="sapxep">
+                        <strong>Sắp xếp</strong>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mới nhất
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#!listproduct" ng-click="order('', '')">Mặc định</a></li>
+                                <li><a class="dropdown-item" href="#!listproduct" ng-click="order('', '')">Mới nhất</a></li>
+                                <li><a class="dropdown-item" href="#!listproduct" ng-click="order('name', false)">A -> Z</a></li>
+                                <li><a class="dropdown-item" href="#!listproduct" ng-click="order('name', true)">Z -> A</a></li>
+                                <li><a class="dropdown-item" href="#!listproduct" ng-click="order('price', false)">Giá tăng dần</a></li>
+                                <li><a class="dropdown-item" href="#!listproduct" ng-click="order('price', true)">Giá giảm dần</a></li>
+                                <li><a class="dropdown-item" href="#!listproduct">Bán chạy nhất</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control" ng-model="keyword" placeholder="Tìm kiếm sản phẩm">
+  
+                    </div>
+                </div>
+                <hr>
+                <!-- Productlist -->
+                <div class="row row-cols-1 row-cols-md-4 g-4" style="text-align: center;">
+                    <div class="col" ng-repeat="sp in list | filter: keyword : false | orderBy : cot : kieu">
+                        <div class="card h-100">
+                            <a href="#!detail"><img src="{{sp.img}}" class="card-img-top" alt=""></a>
+                            <div class="card-body">
+                                <h5 class="card-title">{{sp.name}}</h5>
+                                <strong class="text-danger">{{sp.price | number:3}}<sup><u>đ</u></sup></strong><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </article>

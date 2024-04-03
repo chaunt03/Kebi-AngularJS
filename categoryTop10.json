@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "name": "Túi Xách Tay In Hoa - SAT 0226",
+        "price": 425.000,
+        "img": "Top10/tui1.jpg"
+    },
+    {
+        "id":2,
+        "name": "Túi Cói Xách Tay Quai Tròn - SAT 0232",
+        "price": 369.000,
+        "img": "Top10/tuixachtayquaytron.jpg"
+    },
+    {
+        "id":3,
+        "name": "Túi Xách Tay Quai Ánh Metallic",
+        "price": 870.000,
+        "img": "Top10/tuixachquaianhmetalic.jpg"
+    },
+    {
+        "id":4,
+        "name": "Túi Xách Tay TOT 0300",
+        "price": 890.000,
+        "img": "Top10/tuitot.jpg"
+    },
+    {
+        "id":5,
+        "name": "Túi Xách Tay Balian",
+        "price": 980.000,
+        "img": "Top10/tuibalian.jpg"
+    },
+    {
+        "id":6,
+        "name": "Giày Cao Gót Có Quai Cổ Chân - BMN 0309 - Màu Vàng",
+        "price": 425.000,
+        "img": "Top10/giaycaogot.jpg"
+    },
+    {
+        "id":7,
+        "name": "Giày Cao Gót Đính Nơ - BMN 0299 - Màu Đen",
+        "price": 380.000,
+        "img": "Top10/giaycaogotdinhno.jpg"
+    },
+    {
+        "id":8,
+        "name": "Giày Sandal Cao Gót Quai Lượn Chéo - Màu Xanh Rêu",
+        "price": 475.000,
+        "img": "Top10/giaysandalcaogot.jpg"
+    },
+    {
+        "id":9,
+        "name": "Giày Cao Gót Phối Vải Tweed - BMN 0295 - Màu Đỏ Đậm",
+        "price": 450.000,
+        "img": "Top10/giaycaogotphoivai.jpg"
+    },
+    {
+        "id":10,
+        "name": "Giày Cao Gót Ánh Kim Tuyến - Màu Bạc",
+        "price": 380.000,
+        "img": "Top10/giaycaogotanhkimtuyen.jpg"
+    }
+]

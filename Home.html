@@ -1,0 +1,216 @@
+<!-- Carosel-->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Carosel/carosel1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Carosel/carosel2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Card -->
+<div class="container">
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-sm-3 mb-3 mb-sm-0">
+      <div>
+        <div class="card-body">
+          <h6 class="card-title">
+            <img src="Card/car.png" alt="">
+            Vận chuyển miễn phí
+          </h6>
+          <p class="card-text fs-6">Cho đơn hàng > 500.000đ</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 mb-3 mb-sm-0">
+      <div>
+        <div class="card-body">
+          <h6 class="card-title">
+            <img src="Card/quatang.png">
+            Mua 2 được giảm giá
+          </h6>
+          <p class="card-text fs-6">Lên đến 10% cho đơn hàng tiếp</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 mb-3 mb-sm-0">
+      <div>
+        <div class="card-body">
+          <h6 class="card-title">
+            <img src="Card/huychuong.png" alt="">
+            Chứng nhận chất lượng
+          </h6>
+          <p class="card-text fs-6">Sản phẩm chất lượng được kiếm định</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 mb-3 mb-sm-0">
+      <div>
+        <div class="card-body">
+          <h6 class="card-title">
+            <img src="Card/lienhe.png" alt="">
+            Hotline: 19001919
+          </h6>
+          <p class="card-text fs-6">Hỗ trợ trực tiếp nhanh chóng</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Top10 -->
+<div class="container">
+  <div class="title" style="text-align: center;">
+    <h2 class="card-title">
+      TOP 10 SẢN PHẨM HOT NHẤT TUẦN
+      <hr>
+    </h2>
+  </div>
+  <!-- Productlist -->
+  <div class="row row-cols-1 row-cols-md-5 g-4" style="text-align: center;">
+    <div class="col" ng-repeat="p in productsTop10">
+      <div class="card h-100">
+        <img src="{{p.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{p.name}}</h5>
+          <strong class="text-danger">{{p.price | number:3}}<sup><u>đ</u></sup></strong><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SeeAll -->
+<div class="container" style="text-align: center; margin-top: 20px;">
+  <button type="button" class="btn btn-danger"><a href="#!listproduct"
+      style="text-decoration: none; color: white;">Xem tất cả</a></button>
+</div>
+
+<!-- ImageMiddle -->
+<div class="container" style="margin-top: 20px;">
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="Img/hi1.jpg" alt="" style="width: 100%; margin-left: 10px;">
+    </div>
+    <div class="col-sm-6">
+      <img src="Img/hi2.jpg" alt="" style="width: 100%; margin-right: 10px;">
+    </div>
+  </div>
+</div>
+
+<!-- NewProduct -->
+<div class="container" style="margin-top: 20px;">
+  <div class="title" style="text-align: center;">
+    <h2 class="card-title">
+      NHỮNG SẢN PHẨM MỚI NHẤT
+      <hr>
+    </h2>
+  </div>
+  <!-- Productlist -->
+  <div class="row row-cols-1 row-cols-md-5 g-4" style="text-align: center;">
+    <div class="col" ng-repeat="p in productsNew">
+      <div class="card h-100">
+        <img src="{{p.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{p.name}}</h5>
+          <strong class="text-danger">{{p.price | number:3}}<sup><u>đ</u></sup></strong><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SeeMoreProduct -->
+<div class="container" style="text-align: center; margin-top: 20px;">
+  <button type="button" class="btn btn-danger"><a href="#!listproduct"
+      style="text-decoration: none; color: white;">Xem thêm sản phẩm</a></button>
+</div>
+
+<!-- ThongTinKhuyenMai -->
+<div class="container" style="text-align: center;">
+  <div class="title" style="text-align: center; margin-top: 30px;">
+    <h2 class="card-title">
+      THÔNG TIN KHUYẾN MÃI
+      <hr>
+    </h2>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div>
+        <img src="KhuyenMai/km1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sale ngập tràn giảm giá đến 30%</h5>
+          <p class="card-text"><small class="text-body-secondary">Zara khuyến mãi khủng tất cả các sản phẩm tại cửa
+              hàng, sale up từ 30%, tất cả các sản phẩm còn lại trong bộ sưu tập 2018.</small></p>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div=>
+        <img src="KhuyenMai/km2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mixstyle chuẩn xinh cho các cô nàng nữ tính</h5>
+          <p class="card-text"><small class="text-body-secondary">Style đón mùa thu cho nàng hẳn sẽ không làm bạn thất
+              vọng với những xu hướng thời trang bắt mắt không thể nào bỏ lỡ</small></p>
+          <p class="card-text"></p>
+        </div>
+      </div=>
+    </div>
+    <div class="col">
+      <div>
+        <img src="KhuyenMai/km3.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Những món quà đặc biệt dành tặng "gấu" trong ngày Valentine</h5>
+          <p class="card-text"><small class="text-body-secondary">Lễ tình nhân nên tặng gì cho thật ý nghĩa? Bài viết
+              sau đây sẽ gợi ý một vài món đồ yêu thích của nàng!</small></p>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- NhaTaiTro -->
+<div style="background-color: aliceblue;">
+  <div class="row row-cols-1 row-cols-md-5 g-4" style="text-align: center;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="NhaTaiTro/tt1.jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="NhaTaiTro/tt2.webp" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="NhaTaiTro/tt3.webp" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="NhaTaiTro/tt4.webp" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="NhaTaiTro/tt5.webp" class="card-img-top" alt="...">
+      </div>
+    </div>
+  </div>
+</div>

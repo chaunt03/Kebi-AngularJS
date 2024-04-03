@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ</title>
+  <style>
+    a:hover {
+      background-color: red;
+    }
+  </style>
+
+  <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+  <script src="angular.min.js"></script>
+  <script src="angular-route.min.js"></script>
+</head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+
+  <header ng-include="'Header.html'"></header>
+<!-- 
+  <aside ng-include="'ListProduct.html'"></aside>
+  <article>
+    
+  </article> -->
+  <ng-view></ng-view>
+
+  <footer ng-include="'Footer.html'"></footer>
+
+
+
+  <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/9b95f55e0f.js" crossorigin="anonymous"></script>
+  <script src="anglular.js"></script>
+</body>
+
+</html>

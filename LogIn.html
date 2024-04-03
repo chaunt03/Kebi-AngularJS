@@ -1,0 +1,28 @@
+<!-- Login -->
+<div class="container" style="width: 500px; height: auto;">
+    <h3 style="text-align: center;">ĐĂNG NHẬP TÀI KHOẢN</h3>
+    <form name="checkvar">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" ng-model="email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" name="txtEmail" required>
+            <span class="text-primary" ng-show="checkvar.txtEmail.$valid">
+                Email hợp lệ
+            </span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+            <input type="password" ng-model="password" class="form-control" id="exampleInputPassword1"
+                name="txtPassword" minlength="3" maxlength="10" required>
+            <span class="text-danger" ng-show="checkvar.txtPassword.$invalid">
+                Mật khẩu phải từ 3-10 kí tự
+            </span>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Nhớ tài khoản?</label>
+        </div>
+        <button type="submit" class="btn btn-danger">Đăng nhập</button><br>
+        <a href="#!register" class="text-danger">Chưa có tài khoản? Đăng kí tại đây</a>
+    </form>
+</div>

@@ -1,0 +1,232 @@
+    <!-- DetailPro -->
+    <div class="container">
+      <div class="row">
+          <!-- Image -->
+          <div class="col-sm-4">
+              <div class="row">
+                  <img src="{{list.img}}" alt="">
+                  <div class="row text-center">
+                      <fieldset>
+                          <img src="ListProduct/sp1.jpg" alt="" class="img-thumbnail"
+                              style="height: 100px; max-width: 95%;">
+                          <img src="ListProduct/sp1-ngang.jpg" alt="" class="img-thumbnail"
+                              style="height: 100px; max-width: 95%;">
+                          <img src="ListProduct/sp1.jpg" alt="" class="img-thumbnail"
+                              style="height: 100px; max-width: 95%;">
+                      </fieldset>
+                  </div>
+                  <div class="col-sm-6">
+                      <strong>Đánh giá - Bình luận</strong>
+                      <hr>
+                  </div>
+              </div>
+          </div>
+          <!-- Details -->
+          <div class="col-sm-8">
+              <div class="row">
+                  <div class="col-sm-7">
+                      <ul style="list-style-type: none;">
+                          <li>
+                              <h2><strong>{{list.name}}</strong></h2>
+                          </li>
+                          <li style="margin-top: 20px;">Trạng thái: Còn hàng</li>
+                          <li style="margin-top: 20px;"><strong class="text-danger">
+                                  <h4>{{list.price | number:3}}<sup><u>đ</u></sup></h4>
+                              </strong></li>
+                          <hr>
+                          <li style="margin-top: 20px;"><strong>Màu sắc:</strong>
+                              <img src="ListProduct/sp1.jpg" alt="" class="img-thumbnail"
+                                  style="height: 30px; max-width: 95%;">
+                              <img src="ListProduct/sp1.jpg" alt="" class="img-thumbnail"
+                                  style="height: 30px; max-width: 95%;">
+                          </li>
+                          <li style="margin-top: 20px;"><strong>Kích cỡ:</strong>
+                              <div class="row">
+                                  <div class="card" style="height: auto; width: 45px;">35</div>
+                                  <div class="card" style="height: auto; width: 45px;">36</div>
+                                  <div class="card" style="height: auto; width: 45px;">37</div>
+                              </div>
+                          </li>
+                          <li style="margin-top: 20px;">
+                              <strong>Số lượng:</strong>
+                              <input type="number" id="quantity" class="text-center float-left border-right-0 border-left-0 rounded-3 w-10"
+                              name="quantity" value="1" min="1" max="5000">
+                          </li>
+                          <li style="margin-top: 20px;">
+                              <tr>
+                                  <td>
+                                      <button class="btn btn-danger" ng-click="mua(list)">Thêm vào giỏ hàng</button>
+                                  </td>
+                                  <td>
+                                      <button class="btn btn-danger">Mua ngay</button>
+                                  </td>
+                              </tr>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- Sale -->
+                  <div class="col-sm-5">
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Card/car.png" alt="Bootstrap" width="45" height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <strong>Vận chuyển miễn phí</strong>
+                                      <p>Cho đơn hàng > 500.000<u>đ</u></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Card/quatang.png" alt="Bootstrap" width="45" height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <strong>Mua 2 được giảm giá</strong>
+                                      <p>Lên đến 10% cho đơn hàng tiếp</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Card/huychuong.png" alt="Bootstrap" width="45" height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <strong>Chứng nhận chất lượng</strong>
+                                      <p>Sản phẩm chất lượng kiểm định</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Card/lienhe.png" alt="Bootstrap" width="45" height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <strong>Hotline: <a href="#"
+                                              style="text-decoration: none; color: black;">19002812</a></strong>
+                                      <p>Hỗ trợ trực tiếp nhanh chóng</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- San pham lien quan -->
+
+                      <div style="margin: 20px;">
+                          <strong><a href="#" style="text-decoration: none; color: black;">Sản phẩm liên
+                                  quan</a></strong>
+                      </div>
+                      <div>
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Top10/giaycaogot.jpg" alt="Bootstrap" width="45" height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <p class="card-title">Giày Cao Gót Có Quai Cổ Chân - BMN 0309 - Màu Vàng</p>
+                                      <strong class="text-danger">425.000<sup><u>đ</u></sup></strong><br>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <hr>
+                      <div>
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Top10/giaycaogotdinhno.jpg" alt="Bootstrap" width="45"
+                                              height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <p class="card-title">Giày Cao Gót Đính Nơ - BMN 0299 - Màu Đen</p>
+                                      <strong class="text-danger">380.000<sup><u>đ</u></sup></strong><br>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <hr>
+                      <div>
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Top10/giaysandalcaogot.jpg" alt="Bootstrap" width="45"
+                                              height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <p class="card-title">Giày Sandal Cao Gót Quai Lượn Chéo - Màu Xanh Rêu</p>
+                                      <strong class="text-danger">475.000<sup><u>đ</u></sup></strong><br>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <hr>
+                      <div>
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Top10/giaycaogotphoivai.jpg" alt="Bootstrap" width="45"
+                                              height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <p class="card-title">Giày Cao Gót Phối Vải Tweed - BMN 0295 - Màu Đỏ Đậm</p>
+                                      <strong class="text-danger">450.000<sup><u>đ</u></sup></strong><br>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <hr>
+                      <div>
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                      <a class="navbar-brand" href="#">
+                                          <img src="Top10/giaycaogotanhkimtuyen.jpg" alt="Bootstrap" width="45"
+                                              height="auto">
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-10">
+                                      <p class="card-title">Giày Cao Gót Ánh Kim Tuyến - Màu Bạc</p>
+                                      <strong class="text-danger">380.000<sup><u>đ</u></sup></strong><br>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="icon">
+              <strong>Chia sẻ:</strong>
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-google"></i>
+          </div>
+      </div>
+  </div>

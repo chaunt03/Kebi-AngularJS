@@ -1,0 +1,38 @@
+<div class="container" ng-app="myapp" ng-controller="myctrl">
+    <h1>Giỏ hàng</h1>
+  <table class="table">
+      <thead>
+          <tr >
+              <th>STT</th>
+              <th>Tên Sản Phẩm</th>
+              <th>Giá</th>
+              <th>Số Lượng</th>
+              <th>Thành Tiền</th>
+              <th>Chỉnh Sửa</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr ng-repeat="item in giohang track by $index">
+              <td>{{$index+1}}</td>
+              <td>{{item.list.name}}</td>
+              <td>{{item.list.price}}</td>
+              <td>
+                  <input type="number" ng-model="item.soluong" min="1" style="width: 100px;" class="form-control">
+              </td>
+              <td>{{item.soluong * item.list.price}}</td>
+              <td>
+                  <button class="btn btn-danger" ng-click="xoa(item.prod.id)">Xóa</button>
+              </td>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <th colspan="4">Tổng thành tiền</th>
+              <th>{{tinhTongtt()}}</th>
+              <th>
+                  <button button class="btn btn-danger" ng-click="xoahet()">Xóa Hết</button>
+              </th>
+          </tr>
+      </tfoot>
+  </table>
+</div>
